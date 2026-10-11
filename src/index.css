@@ -1,0 +1,118 @@
+.light-background {
+  --background-color: #f1f3f8;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #142e6c;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #1c4097;
+  --contrast-color: #ffffff;
+}
+
+:root {
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 , button{
+  font-family:var( --heading-font) ;
+}
+
+.navbar .collapse .nav-item .nav-link {
+color:#86A5D5 !important;
+}
+.navbar .collapse .nav-item .active {
+color:#e6eef9 !important;
+}
+
+.navbar .collapse .nav-item .nav-link:hover {
+color:#ffff !important;
+transition: 0.3 ease-out;
+}
+@media (min-width: 992px) {
+
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+width: 30%;
+font-size: 15px !important;
+  }
+  .dropdown-menu {
+  width: 180px !important;       
+  max-height: 400px !important; 
+   padding: 12px 0px 12px 0px;
+
+}
+
+.dropdown-menu .dropdown-item {
+  margin-bottom: 8px; 
+  border-radius: 2px; 
+}
+
+  .navbar .dropdown-submenu {
+    position: relative;
+
+  }
+  
+  .navbar .dropdown-submenu:hover > .dropdown-menu {
+    top: 0;
+    left: -100%; 
+    margin-top: -1px;
+    display: block;
+    font-size: 15px !important;
+
+  }
+
+  .navbar .dropdown-submenu .dropdown-menu {
+    position: absolute;
+    z-index: 1050;
+  }
+}
+
+.navbar{
+height: 90px;
+    font-family: var(--nav-font) !important;
+}
+
+
+.navbar .sitename {
+  font-family: var(--heading-font) !important;
+  color:#e6eef9 !important;
+
+}
+
+.dropdown-menu li .dropdown-item {
+  color: black !important; 
+ 
+}
+
+.dropdown-menu li .dropdown-item:hover,
+.dropdown-menu li .dropdown-item:focus {
+  color:    #559bcc  !important; 
+  background-color: transparent; 
+
+}
+
+
+.btns button:hover {
+background-color: #559bcc !important ;
+transition: 0.4 ease-in-out !important;
+}
+
+.header.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.header.navbar.scrolled {
+  background-color: rgba(22, 44, 104, 0.92);
+  backdrop-filter: blur(4px);
+}
